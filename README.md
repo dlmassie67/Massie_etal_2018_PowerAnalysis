@@ -1,17 +1,17 @@
 # Massie_etal_2018_PowerAnalysis
-Framework for assessing the ability to detect a macroscale effect of fish growth
+A framework for assessing the ability to detect macroscale effects on fish growth 
 
 File descriptions:
 Folder “EmpiricalAnalysis”: 
-•	FHC_VonBgrowth.R : R script for quantifying the intraspecific spatial variability of flathead catfish (FHC) growth using a Bayesian hierarchical von Bertalanffy growth model
-•	FHCLengthAtAgeData.csv : file containing observed flathead catfish length-at-ages
+•	FHC_VonBgrowth.R: R script for quantifying the intraspecific spatial variability of flathead catfish (FHC) growth using a Bayesian hierarchical von Bertalanffy growth model
+•	FHCLengthAtAgeData.csv: file containing observed flathead catfish length-at-ages
 
 Folder “PowerAnalysis”:
-•	PowerAnaylsis.R : R script for running the power analysis. All steps are commented out. The framework is encouraged to be adapted to investigate other effects [magnitude and direction], species, sampling scenarios, and estimating effects on other growth parameters
-•	Age_structure.txt : text file of FHC proportion-at-ages calculated from the observed data 
+•	PowerAnaylsis.R: R script for running the power analysis. All steps are commented out. The framework is encouraged to be adapted to investigate other effects [magnitude and direction], species, sampling scenarios, and estimating effects on other growth parameters
+•	Age_structure.txt: text file of FHC proportion-at-ages calculated from the observed data 
 
 
-Abbreviated steps for assessing the ability to detect a macroscale effect of fish growth
+Abbreviated steps for assessing the ability to detect a macroscale effect of fish growth:
 Step 1: Use FHC_VonBgrowth.R script to run the Bayesian hierarchical von Bertalanffy  growth model using observed FHC length-at-age data
 Step 2: Save MCMC output from spatial growth model as RDS file
 Step 3: Open PowerAnalysis.R script and read in the spatial growth model output from step 2 
